@@ -140,6 +140,7 @@ Documentação aberta para a integração One
            "sessoes": 
             [ 
              {
+              "id": 54905,
               "dataHora": "2019-10-04 21:15:00",
               "tela": "2D",
               "audio": "DUB",
@@ -157,6 +158,19 @@ Documentação aberta para a integração One
  "messages": ""
 }
 ```
+---
+
+## Link para sessão na One Ticket :ok:
+
+Ao clicar em uma sessão no aplicativo, o seguinte link deverá ser aberto:
+`https://cinema.oneticket.com.br/filme/{filmeSlug}s={sessaoId}&utm_source=oneticket&utm_medium=mobile&utm_campaign=app_launch`
+
+**Parâmetros**
+* `filmeSlug` (route param): _slug_ do filme
+* `sessaoId` (query string): ID da sessão
+
+Os parâmetros `utm_source`, `utm_medium` e `utm_campaign` são fixos e servem para identificar o tráfego oriundo do aplicativo.
+
 ---
 
 ## Minha conta (OAuth) :ok:
